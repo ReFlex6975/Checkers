@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
         UpdateUI();
         if (gamerHealth <= 0) 
         {
-            //Time.timeScale = 0;
             pause();
         }
     }
@@ -108,7 +107,6 @@ public class GameManager : MonoBehaviour
             GameObject newPawn = Instantiate(pawnPrefab, randomPosition, Quaternion.identity);
             Pawn pawn = newPawn.GetComponent<Pawn>();
 
-            // Передаем текущий слот в метод инициализации
             PawnSlot currentSlot = availableSlots.Find(slot => slot.transform.position == randomPosition);
             pawn.Initialize(1, 10f, path.waypoints, currentSlot);
         }
@@ -121,7 +119,7 @@ public class GameManager : MonoBehaviour
 
         int randomIndex = Random.Range(0, freeSlots.Count);
         PawnSlot chosenSlot = freeSlots[randomIndex];
-        chosenSlot.isOccupied = true; // Отметим слот как занятый
+        chosenSlot.isOccupied = true;
         return chosenSlot.transform.position;
     }
 }

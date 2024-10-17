@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CircleProjectile : MonoBehaviour
 {
-    public float speed = 5f; // Скорость круга
+    public float speed = 7f; // Скорость круга
     private Transform target;
     private float damage;
 
@@ -14,7 +14,12 @@ public class CircleProjectile : MonoBehaviour
         this.damage = damage;
     }
 
-    private void Update()
+    private void FixedUpdate()
+    {
+        MoveTowardsTarget();
+    }
+
+    private void MoveTowardsTarget()
     {
         if (target != null)
         {
