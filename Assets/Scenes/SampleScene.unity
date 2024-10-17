@@ -342,53 +342,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1167847488}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &91674376
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 91674377}
-  - component: {fileID: 91674378}
-  m_Layer: 0
-  m_Name: PawnPrefabs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &91674377
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91674376}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.415, y: -2.05454, z: 122.22797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &91674378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91674376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce3c4f7e053e1b344883cf31bce65c51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerDeck:
-    availablePawns: []
-  pawnPrefab: {fileID: 2673051259036797114, guid: 91b64c07ec686f545b3b265eea43824c, type: 3}
 --- !u!1 &92947405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,17 +3459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb13b248fadd1364280926aae18c6a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ManaText: {fileID: 1778369604}
-  CostText: {fileID: 806885037}
-  mana: 100
-  pawnPrefab: {fileID: 2673051259036797114, guid: 91b64c07ec686f545b3b265eea43824c, type: 3}
-  board: {fileID: 131218126}
-  cost: 10
-  enemyPrefab: {fileID: 2543135841306277568, guid: d7ddd4b2ace7afd45a878bb27ffc8369, type: 3}
-  spawnInterval: 0.9
-  path: {fileID: 1167847489}
-  gamerHealth: 3
-  panel: {fileID: 798017052}
 --- !u!1 &1849003721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3846,5 +3788,4 @@ SceneRoots:
   - {fileID: 131218126}
   - {fileID: 1846289678}
   - {fileID: 1167847488}
-  - {fileID: 91674377}
   - {fileID: 1849003722}
